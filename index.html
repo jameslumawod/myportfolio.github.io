@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Lumawod Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <div class="logo">James Designer</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+  <div class="hero-text">
+    <span class="tag">Ready to Innovate</span>
+    <h1>Graphic <span>Designerღ</span></h1>
+    <p>Creating clean, functional, and aesthetic web interfaces.</p>
+    <div class="skills">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span>
+    </div>
+    <div class="hero-buttons">
+      <a href="#portfolio" class="btn">Projects</a>
+      <a href="#contact" class="btn outline">Contact</a>
+    </div>
+  </div>
+  <div class="hero-img">
+<img src="butterfly.jfif" class="profile-pic" alt="Profile Photo">
+  </div>
+</section>
+
+  <!-- ABOUT SECTION (Split Layout) -->
+  <section id="about" class="about">
+  <h2>About Me</h2>
+  <div class="about-wrapper">
+    <div class="about-img">
+     <img src="profile.jfif" class="profile-pic" alt="About Profile Photo">
+    </div>
+    <div class="about-text">
+      <h3>Im Graphic Designer </h3>
+      <p>Hi! I'm <strong>James Lumawod</strong>, a passionate graphic designer and interface creator from Dayap, Calauan, Laguna. I specialize in designing clean, modern, and visually engaging layouts for websites, branding, and digital materials. I love combining creativity with purposeful design to communicate ideas effectively and beautifully.</p>
+      <ul class="info-list">
+        <li><strong>Background:</strong> Self-taught designer with hands-on experience creating brand visuals, posters, and UI layouts.</li>
+        <li><strong>Skills:</strong> Logo Design, Layouting, UI/UX, Web Design, Color Styling, Visual Composition</li>
+        <li><strong>Interests:</strong> Aesthetic digital art, typography, pastel palettes, and smooth UI animations</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="portfolio">
+  <h2>Projects</h2>
+
+  <div class="project-grid">
+
+    <div class="project-card">
+      <img src="design brand.webp" alt="Brand Identity Design" />
+      <h3>Brand Identity</h3>
+      <p>Created a modern and clean brand identity for a local business, including logo and color system.</p>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="mobileapp.jfif" alt="UI/UX Case Study" />
+      <h3>Mobile App UI/UX</h3>
+      <p>Designed a user-friendly app interface focusing on minimal layout, clear spacing, and usability.</p>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+ 
+    <div class="project-card">
+      <img src="cafe.jpg" alt="Social Media Brand Kit" />
+      <h3>Social Media Café Aura</h3>
+      <p>The kit includes optimized Facebook post templates, Instagram story layouts, highlight icons, and promotional poster designs.</p>
+      <a href="#" class="project-link">View Project</a>
+    </div>
+  </div>
+</section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+  <h2>Contact</h2>
+
+  <p class="contact-text">Feel free to reach out or connect with me click on my social platforms!</p>
+
+  <div class="contact-icons">
+    <a href="https://www.facebook.com/jamealumawod" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/its1jamea?igsh=MXFuM2I1OHcwdWd4cA==" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="lumawodjames24@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</section>
+
+
+  <script>
+    // Preview Script
+    const heroUpload = document.getElementById('hero-upload');
+    const heroPreview = document.getElementById('hero-preview');
+    heroUpload.onchange = () => {
+      heroPreview.src = URL.createObjectURL(heroUpload.files[0]);
+      heroPreview.style.display = 'block';
+    }
+
+    const aboutUpload = document.getElementById('about-upload');
+    const aboutPreview = document.getElementById('about-preview');
+    aboutUpload.onchange = () => {
+      aboutPreview.src = URL.createObjectURL(aboutUpload.files[0]);
+      aboutPreview.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
